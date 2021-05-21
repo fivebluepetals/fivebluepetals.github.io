@@ -1,7 +1,7 @@
 # Setup
 title:               Project Night Azalea
 tagline:             ''
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'Host for walk-throughs and presentation for the Youtube Channel [TBD](https://youtube.com/)'
 url:                 https://fivebluepetals.github.io
 baseurl:             ''
 paginate:            5
