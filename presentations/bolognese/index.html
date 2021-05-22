@@ -1,0 +1,18 @@
+---
+layout: presentation
+type: presentation
+categories: bolognese
+---
+
+{% for post in site.posts reversed %}
+  {% if post.path contains 'bolognese' %}
+  <section data-markdown
+           data-separator="^\n---\n$"
+           data-separator-vertical="^\n--\n$"
+           data-notes="^Note:">
+    <script type="text/template">
+      {{ post.content }}
+    </script>
+  </section>
+  {% endif %}
+{% endfor %}
