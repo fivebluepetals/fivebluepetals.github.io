@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+  <link rel="stylesheet" href="{{ 'public/revealjs/dist/reset.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ 'public/revealjs/dist/reveal.css' | absolute_url }}">
+  <link rel="stylesheet" href="{{ 'public/revealjs/dist/theme/black.css' | absolute_url }}">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="{{ 'public/revealjs/plugin/highlight/monokai.css' | absolute_url }}">
+  <title>{{ page.project_name }} - {{ page.title }}</title>
 </head>
 <body>
-  hello
+  <div class="reveal">
+    <div class="slides">
+    {{ content }}
+    </div>
+  </div>
+
+  <script src="{{ 'public/revealjs/dist/reveal.js' | absolute_url }}"></script>
+  <script src="{{ 'public/revealjs/plugin/notes/notes.js' | absolute_url }}"></script>
+  <script src="{{ 'public/revealjs/plugin/markdown/markdown.js' | absolute_url }}"></script>
+  <script src="{{ 'public/revealjs/plugin/highlight/highlight.js' | absolute_url }}"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+  </script>
 </body>
 </html>
