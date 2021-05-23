@@ -1,11 +1,13 @@
 ---
 layout: presentation
 type: presentation
-categories: bolognese
+categories: aws lambda, Alexa skill
+project_name: bolognese
+title: building voice app
 ---
 
 {% for post in site.posts reversed %}
-  {% if post.path contains 'bolognese' %}
+  {% if post.project == "bolognese" %}
   <section data-markdown
            data-separator="^\n---\n$"
            data-separator-vertical="^\n--\n$"
