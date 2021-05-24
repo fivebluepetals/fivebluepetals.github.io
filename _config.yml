@@ -25,6 +25,13 @@ google_analytics_id: #UA-XXXX-Y
 markdown: kramdown
 highlighter: rouge
 
+defaults:
+  - scope:
+      path: "public"
+      type: "pages"
+    values:
+      layout: none
+
 exclude:
   - Gemfile*
   - LICENSE
