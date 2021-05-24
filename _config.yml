@@ -24,9 +24,9 @@ google_analytics_id: #UA-XXXX-Y
 # Don't change anything below
 markdown: kramdown
 highlighter: rouge
-markdown_ext: ignoreme
 
 exclude:
   - Gemfile*
   - LICENSE
   - README.md
+  - .idea/*
